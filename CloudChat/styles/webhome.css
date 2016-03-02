@@ -1,0 +1,18 @@
+h1{color: black}
+h2{color: red; font-style: italic}
+p{font-family: sans-serif}
+.heading{text-align: left}
+table{
+	margin-top: 10px;
+}
+table, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+th{
+	background-color: blue;
+	color: white;
+}
+th, td{
+	padding:5px;
+}

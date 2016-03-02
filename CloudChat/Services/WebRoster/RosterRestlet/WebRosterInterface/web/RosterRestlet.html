@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--<link href = "http://localhost:888/Services/WebRoster/RosterRestlet/RosterRestlet/web/RCSS.css" rel = "stylesheet" type = "text/css"> -->
+        <script src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
+        <script src="http://127.0.0.1:8888/Services/WebRoster/RosterRestlet/RosterRestlet/web/DisplayRoster.java"></script>
+        <script src="http://127.0.0.1:8888/Services/WebRoster/RosterRestlet/RosterRestlet/web/control.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+               $("#table").tablesorter();
+                }
+             );
+            
+        </script>
+        <title>Roster</title>
+
+    </head>
+    <body>
+       <div id = "Roster">
+            <div id = "buttons">
+                <fieldset id = "nav">
+                    <legend>Navigation</legend>
+                    <button id="browse">Browse</button>
+                    <button id="update">Update</button>
+                    <button id="aTeam">Add Team</button>
+                    <button id="aStudent">Add Student</button>
+                    <button id="dTeam">Delete Team</button>
+                    <button id="dStudent">Delete Student</button>       
+                </fieldset>
+            </div>
+        <div id = "roster"></div>
+        <div id = "content"></div>
+        <div id = "buttondiv"></div>
+    </div>
+    </body>
+</html>

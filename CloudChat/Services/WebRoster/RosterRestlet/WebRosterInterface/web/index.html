@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!--<link href = "http://localhost:888/Services/WebRoster/RosterRestlet/RosterRestlet/web/RCSS.css" rel = "stylesheet" type = "text/css"> -->
+        <script src="http://tablesorter.com/__jquery.tablesorter.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                document.domain = "127.0.0.1";
+                $.get("http://127.0.0.1:8282/restlet/", function(data){
+                    $("#roster").empty();
+                    $("#roster").html(data);
+                });
+               $("#table").tablesorter();
+                }
+             );
+            function toAddStudentPage(){
+                var cframe = window.parent.document.getElementById("cframe");
+                cframe.src = "http://127.0.0.1:8080/WebRosterInterface/Views/Options/addStudent.jsp";
+            }
+        </script>
+        <title>Roster</title>
+
+    </head>
+    <body>
+       <div id = "Roster">
+            <div id = "buttons">
+            <form action="Views/Options" method="GET" onsubmit="return false;">
+                <input type="submit" name="button" value="Browse" onclick="toAddStudentPage();"></input>
+                <input type="submit" name="button" value="Update"></input>
+                <input type="submit" name="button" value="Add Student"></input>
+                <input type="submit" name="button" value="Delete Student"></input>
+                <input type="submit" name="button" value="Add Team"></input>
+                <input type="submit" name="button" value="Delete Team"></input>
+            </form>
+            </div>
+        <div id = "roster"></div>
+        <div id = "content"></div>
+        <div id = "buttondiv"></div>
+    </div>
+    </body>
+</html>
+

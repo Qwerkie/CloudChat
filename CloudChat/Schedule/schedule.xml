@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<SCHEDULE>
+    <CLASS>
+        <NUMBER>1</NUMBER>
+        <DATE>M: 1/12</DATE>
+        <TAG>MVC</TAG>
+        <TOPIC>Introduction to Web Applications</TOPIC>
+        <PROJECT>Topic: Course Web Application</PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>2</NUMBER>
+        <DATE>W: 1/14</DATE>
+        <TAG> </TAG>
+        <TOPIC>Fundamental Javascript: the control</TOPIC>
+        <PROJECT>Simple page design</PROJECT>
+        <NOTES>David 1-11</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>3</NUMBER>
+        <DATE>F: 1/16</DATE>
+        <TAG> </TAG>
+        <TOPIC>Javascript: the Window object </TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>David 12-14</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>4</NUMBER>
+        <DATE>W: 1/21</DATE>
+        <TAG>HTML</TAG>
+        <TOPIC>Scripting Document: the model</TOPIC>
+        <PROJECT>Scripting client</PROJECT>
+        <NOTES>David 15</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 1/23</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab1: Node.js</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>5</NUMBER>
+        <DATE>M: 1/26</DATE>
+        <TAG>CSS</TAG>
+        <TOPIC>Scripting CSS: the view</TOPIC>
+        <PROJECT>CSS design</PROJECT>
+        <NOTES>DAVID 16</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>6</NUMBER>
+        <DATE>W: 1/28</DATE>
+        <TAG> </TAG>
+        <TOPIC>Advanced Javascript: event handling</TOPIC>
+        <PROJECT>Scripting client</PROJECT>
+        <NOTES>DAVID 17</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 1/30</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab2: Node.js</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>7</NUMBER>
+        <DATE>M: 2/2</DATE>
+        <TAG>AJAX</TAG>
+        <TOPIC>Advanced Javascript: Ajax</TOPIC>
+        <PROJECT>Ajax component</PROJECT>
+        <NOTES>David 18</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>8</NUMBER>
+        <DATE>W: 2/4</DATE>
+        <TAG> </TAG>
+        <TOPIC>Advanced Javascript: jQuery</TOPIC>
+        <PROJECT>Use jQuery</PROJECT>
+        <NOTES>David 19</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 2/6</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab3: Node.js</TOPIC>
+        <PROJECT>A simple website up &amp; running</PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>9</NUMBER>
+        <DATE>M: 2/9</DATE>
+        <TAG>XML</TAG>
+        <TOPIC>Fundamental XML &amp; XML parsers</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>10</NUMBER>
+        <DATE>W: 2/11</DATE>
+        <TAG> </TAG>
+        <TOPIC>Advanced XML: the schema</TOPIC>
+        <PROJECT>A schema describing columns 2-4</PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 2/13</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab4: XML</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>11</NUMBER>
+        <DATE>M: 2/16</DATE>
+        <TAG>JSP</TAG>
+        <TOPIC>Fundamental JSP</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>12</NUMBER>
+        <DATE>W: 2/18</DATE>
+        <TAG> </TAG>
+        <TOPIC>Advanced JSP</TOPIC>
+        <PROJECT>Transform website to JSP</PROJECT>
+        <NOTES>Tomcat</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 2/20</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab5: JSP</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>13</NUMBER>
+        <DATE>M: 2/23</DATE>
+        <TAG>REST</TAG>
+        <TOPIC>RESTful Web Services: intro, http, ant</TOPIC>
+        <PROJECT>Design a REST component</PROJECT>
+        <NOTES>Martin ch1</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>14</NUMBER>
+        <DATE>W: 2/25</DATE>
+        <TAG> </TAG>
+        <TOPIC>RESTful Web Services: HttpServlet</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 2/27</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab6: RESTful Web Services</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>15</NUMBER>
+        <DATE>M: 3/2</DATE>
+        <TAG>REST</TAG>
+        <TOPIC>RESTful Web Services: JAX-RS</TOPIC>
+        <PROJECT>Implement the REST component</PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>16</NUMBER>
+        <DATE>W: 3/4</DATE>
+        <TAG> </TAG>
+        <TOPIC>RESTful Web Services: Restlet</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 3/6</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab7: RESTful Web Services</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>17</NUMBER>
+        <DATE>M: 3/16</DATE>
+        <TAG>REST</TAG>
+        <TOPIC>RESTful Web Services: JAX-WS</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch2</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>18</NUMBER>
+        <DATE>W: 3/18</DATE>
+        <TAG> </TAG>
+        <TOPIC>Consuming RESTful Services on the Web</TOPIC>
+        <PROJECT>Javascript client to your REST</PROJECT>
+        <NOTES>Martin ch3</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 3/20</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab8: Real world RESTful Web Services</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch3</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>19</NUMBER>
+        <DATE>M: 3/23</DATE>
+        <TAG>SOAP</TAG>
+        <TOPIC>WSDL &amp; SOAP: service description</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>20</NUMBER>
+        <DATE>W: 3/25</DATE>
+        <TAG> </TAG>
+        <TOPIC>SOAP-based Web Services</TOPIC>
+        <PROJECT>Design a SOAP component</PROJECT>
+        <NOTES>Martin ch4</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 3/27</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab9: SOAP Web Services</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch4</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>21</NUMBER>
+        <DATE>M: 3/30</DATE>
+        <TAG>SOAP</TAG>
+        <TOPIC>SOAP-based Service Client</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch4</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>22</NUMBER>
+        <DATE>W: 4/1</DATE>
+        <TAG> </TAG>
+        <TOPIC>SOAP handlers</TOPIC>
+        <PROJECT>Implement the SOAP component</PROJECT>
+        <NOTES>Martin ch5</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 4/3</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab10: SOAP message handlers</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch5</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>23</NUMBER>
+        <DATE>M: 4/6</DATE>
+        <TAG>SOAP</TAG>
+        <TOPIC>SOAP handler chain</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch5</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>24</NUMBER>
+        <DATE>W: 4/8</DATE>
+        <TAG> </TAG>
+        <TOPIC>SOAP: Message Context &amp; Attachments</TOPIC>
+        <PROJECT>Use SOAP handlers</PROJECT>
+        <NOTES>Martin ch5</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 4/10</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab11: SOAP message handlers</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch5</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>25</NUMBER>
+        <DATE>M: 4/13</DATE>
+        <TAG>Security</TAG>
+        <TOPIC>Web Services Security: Https</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch6</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>26</NUMBER>
+        <DATE>W: 4/15</DATE>
+        <TAG> </TAG>
+        <TOPIC>Web Services Security: Containers</TOPIC>
+        <PROJECT>Add security to your WebApp</PROJECT>
+        <NOTES>Martin ch6</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 4/17</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab12: Web Services Security</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch6</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>27</NUMBER>
+        <DATE>M: 4/20</DATE>
+        <TAG>EJB</TAG>
+        <TOPIC>JAX-WS: JSP, EJB</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch7</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER>28</NUMBER>
+        <DATE>W: 4/22</DATE>
+        <TAG> </TAG>
+        <TOPIC>Service Integration &amp; SOA</TOPIC>
+        <PROJECT>Put it all together</PROJECT>
+        <NOTES>Martin ch7</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 4/24</DATE>
+        <TAG> </TAG>
+        <TOPIC>Lab13: JAX-WS</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES>Martin ch7</NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>M: 4/27</DATE>
+        <TAG>Project</TAG>
+        <TOPIC>Final Project Presentation</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>W: 4/29</DATE>
+        <TAG> </TAG>
+        <TOPIC>Final Project Presentation</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+    <CLASS>
+        <NUMBER> </NUMBER>
+        <DATE>F: 5/1</DATE>
+        <TAG> </TAG>
+        <TOPIC>Final Project Presentation</TOPIC>
+        <PROJECT> </PROJECT>
+        <NOTES> </NOTES>
+    </CLASS>
+</SCHEDULE>

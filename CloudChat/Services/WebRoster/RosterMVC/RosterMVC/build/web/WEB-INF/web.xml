@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee           http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>roster</servlet-name>
+        <servlet-class>Controller.RosterCRUDController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>roster</servlet-name>
+        <url-pattern>/roster-action</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>startPage.jsp</welcome-file>
+    </welcome-file-list>    
+</web-app>

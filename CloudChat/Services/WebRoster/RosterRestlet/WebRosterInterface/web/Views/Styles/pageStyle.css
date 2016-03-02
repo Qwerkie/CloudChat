@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 25, 2015, 1:46:28 PM
+    Author     : spr5122
+*/
+
+.tableStyle {
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+.header {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    background-color: #33add6;
+    text-align: left;
+    padding: 5px;
+}
+.body, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    background-color: #ebebeb;
+    text-align: left;
+    padding: 5px;
+    font-family: Lucida Console;
+}
+.body, td:last-child {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    background-color: #ebebeb;
+    text-align: right;
+    padding: 5px;
+}
+.body, td:hover {
+    background-color: #dfdfdf;
+}

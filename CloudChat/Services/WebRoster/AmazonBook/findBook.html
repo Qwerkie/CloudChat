@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            function onSubmit(){
+                $.post("http://127.0.0.1:8888/Services/WebRoster/AmazonBook/getBook", {isbn : $("#isbn").val()}, function(data){
+                    var res = JSON.parse(data);
+                    console.log("got response");
+                    $("#bookInfo").empty();
+
+                    console.log(res.Items.Item);
+                    $("<h3>").text("Title: " + res.Items.Item.ItemAttributes.Title).appendTo("#bookInfo");
+                    $("<p>").text("Author: " + res.Items.Item.ItemAttributes.Author).appendTo("#bookInfo");
+                    $("<p>").text("Manufacturer: " + res.Items.Item.ItemAttributes.Manufacturer).appendTo("#bookInfo");
+                    $("<p>").text("ISBN: " + res.Items.Item.ASIN).appendTo("#bookInfo");
+                    $("<a>").attr("href",res.Items.Item.DetailPageURL).attr("id", "link").text("Click here to go to the page").appendTo("#bookInfo");
+                    $("#link").click(function(){
+                        window.parent.location.replace(res.Items.Item.DetailPageURL);
+                    });
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Find Book</h1>
+        <form action="http://127.0.0.1:8888/Services/WebRoster/AmazonBook/getBook" method="GET">
+        <div>
+                <label>ISBN Number:&emsp;&emsp;&emsp;&nbsp;</label>
+                <input id="isbn" type="text" name="isbn" placeholder="ISBN-10 number"/>
+        </div>
+        <div>
+                <input type="submit" name="button" value="Submit" onClick="onSubmit();return false">
+        </div>
+        
+    </form>
+    <div id="bookInfo"></div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/styles/threeregion.css" rel="stylesheet" type="text/css">
+    <title>
+        Web Applications At PSU Behrend
+    </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+/*
+    window.onbeforeunload = function(){
+        // send ajax to log user out if a user is logged on
+        if(sessionStorage.user !== null || sessionStorage !== undefined){
+            $.post("http://127.0.0.1:8282/CloudChatUserManagerClient/CloudChatUserManagerServlet", {action : "LogOut"});
+            return "You were logged out";
+        }
+    }
+    */
+    function loadEvalSideBar(){
+        if(window.document.getElementById("sframe").src != window.location.origin + "/EvalTool/side.html"){
+            window.document.getElementById("sframe").src = window.location.origin + "/EvalTool/side.html";
+        }
+    }
+    function loadRegularSideBar(){
+        if(window.document.getElementById("sframe").src != window.location.origin + "/pages/sideNavigation.html"){
+            window.document.getElementById("sframe").src = window.location.origin + "/pages/sideNavigation.html";
+        }
+    }
+    function loadScheduleSideBar(){
+        if(window.document.getElementById("sframe").src != window.location.origin + "/Schedule/side.html"){
+            window.document.getElementById("sframe").src = window.location.origin + "/Schedule/side.html";
+        }
+    }
+    function loadRosterSideBar(){
+        if(window.document.getElementById("sframe").src != window.location.origin + "/Services/side.html"){
+            window.document.getElementById("sframe").src = window.location.origin + "/Services/side.html";
+        }
+    }
+
+    function loadCloudChatSideBar(){
+        if(window.document.getElementById("sframe").src != "/CloudChat/side.html"){
+            window.document.getElementById("sframe").src = "/CloudChat/side.html";
+        }
+    }
+
+    </script>
+</head>
+    <body>
+        <div id="navigationbar">
+            <a href="http://swengingtothebeat.corgiorgy.com" target="cframe">
+                <img src="/styles/logo.png" alt="webapplication logo"/>
+            </a>
+            <span class="topnavigationlink">
+                <a href="/roster.html" target="cframe" onclick="loadRosterSideBar()">Web Service</a>
+            </span>
+            <span class="topnavigationlink">
+                <a href="/homec.html" target="cframe" onclick="loadRegularSideBar()">Get Syllabus</a>
+            </span>
+            <span class="topnavigationlink">
+                <a href="/Schedule/schedule.html" target="cframe" onclick="loadScheduleSideBar()">Get Schedule</a>
+            </span>
+            <span class="topnavigationlink">
+                <a href="EvalTool/startpage.html" target="cframe" onclick="loadEvalSideBar();">Evaluation Tool</a>
+            </span>
+            <span class="topnavigationlink">
+                <a href="resources.html" target="cframe" onclick="loadRegularSideBar();">Resources</a>
+            </span>
+            <span class="topnavigationlink">
+                <a href="/CloudChat/index.html" target="cframe" onclick="loadCloudChatSideBar()">CloudChat</a>
+            </span>
+        </div>
+        <div id="sidenavigation">  
+            <iframe src="http://127.0.0.1:8888/pages/sideNavigation.html" name="sframe" id="sframe" scrolling="no"frameborder="0"></iframe>
+        </div>
+        <div id="content">
+            <iframe src="http://127.0.0.1:8888/homec.html" name = "cframe" id="cframe" frameborder="0"></iframe>
+        </div>
+        <div id="pagefooter">
+            <hr>
+            <p id="footer">&copy;Team 8 Lab 2 2015 </p>
+        </div>
+    </body>
+</html>

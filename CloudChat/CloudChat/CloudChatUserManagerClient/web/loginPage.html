@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://127.0.0.1:8080/CloudChatUserManagerClient/scripts/sharedScript.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://127.0.0.1:8080/CloudChatUserManagerClient/css/userManagerStyle.css">
+        <script>
+            function fadeInChatOptions(sframe) {
+                $("#userIDTag", sframe.contentDocument).html("UserID: " + sessionStorage.user);
+                $("#startChat", sframe.contentDocument).fadeIn("slow");
+                $("#logoutButton", sframe.contentDocument).fadeIn("slow");
+                $("#userIDTag", sframe.contentDocument).fadeIn("slow");
+            }
+            function logIn() {
+                console.log($("#password").val());
+                if ($("#userID").val().trim() !== "" && $("#password").val().trim() !== "" && $("#password").val().trim().length > 6) {
+                    var userID = $("#userID").val().trim();
+                    var password = $("#password").val().trim();
+                    $.ajax({
+                        method: "POST",
+                        url: "http://127.0.0.1:8888/CloudChat/navigate",
+                        data: {"type": "UserManager", "action": "LogIn", "userID": userID, "password": password},
+                        success: function (data) {
+                            $.post("http://127.0.0.1:8888/CloudChat/navigate", {type: "GetPage", page: "LogInSuccess"}, function (data2) {
+                                console.log("Got here");
+                                var result = JSON.parse(data);
+                                if (result.retVal == true) {
+                                    console.log(result);
+                                    sessionStorage.setItem("user", userID);
+                                    $("#pageContent").slideUp("slow");
+                                    var sframe = parent.document.getElementById("sframe");
+                                    $("#loginButton", sframe.contentDocument).fadeOut("fast");
+                                    $("#registerButton", sframe.contentDocument).fadeOut("fast");
+                                    setTimeout(function () {
+                                        fadeInChatOptions(sframe);
+                                        document.body.innerHTML = "";
+                                        document.write(data2);
+                                        $("#pageContent").hide();
+                                        $("#pageContent").slideDown("slow");
+
+
+                                    }, 700);
+
+                                }
+                                else {
+                                    $("#errorMessage").html("UserID or Password is not valid");
+                                }
+                            });
+
+                        },
+                        error: function (err) {
+                            console.log(err);
+                            $("#errorMessage").html("UserID or Password is not valid");
+                        }
+                    });
+                }
+                else if ($("#userID").val().trim() === "") {
+                    $("#errorMessage").html("UserID cannot be blank");
+                }
+                else if ($("#password").val().trim().length <= 6) {
+                    $("#errorMessage").html("Password length must be greater than 6 characters");
+                }
+                return false;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="pageContent">
+            <h2>Log In</h2>
+            <div>
+                <fieldset style="display: inline-block;">
+                    <legend>Enter in your User ID and Password</legend>
+                    <form method="POST" onsubmit="return logIn();">
+                        <div><span>User ID:&emsp;</span><input id="userID" style="margin-left: 13px;" type="text" name="userID" placeholder="Your User ID"/></div>
+                        <div><span>Password:&emsp;</span><input id="password" type="password" name="password" placeholder="Your password"/></div>
+                        <input type="submit" name="Log In" value="Log In"/>
+                    </form>
+                </fieldset>
+                <div>
+                    <p id="errorMessage" style="color: red;"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

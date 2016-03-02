@@ -1,0 +1,33 @@
+#block{
+	text-align: center;
+	border: 2px solid;
+	border-color: #4D4D4D;
+	height: 170px;
+	margin-top: 10px;
+}
+
+#cloudChatBlock{
+	text-align: center;
+}
+
+input.inner{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+input.block{
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+p{
+	margin-top: 40px;
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-size: 1.2em;
+}
+legend{
+	font-family: Calibri;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	font-weight: bold;
+}

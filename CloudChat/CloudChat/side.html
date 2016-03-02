@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8888/styles/side.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/scripts/sideScript.js"></script>
+
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <fieldset id="cloudChatBlock">
+                <legend>CloudChat!!!</legend>
+                <div>
+                    <input type="button" class="block" id="registerButton" value="Register" onclick="loadRegisterPage()"/>
+                </div>
+                <div>
+                    <input type="button" class="block" id="loginButton" value="Login" onclick="loadLoginPage();"/>
+                </div>
+                <div>
+                    <input type="button" class="block" id="startChat" value="Start Chatting" onclick="loadChatPage()"/>
+                </div>
+                <div>
+                    <input type="button" class="block" id="logoutButton" value="Log Out" onclick="logout();"/>
+                </div>
+            </fieldset>
+            <div>
+                <h5 id="userIDTag" style="color: white;"></h5>
+            </div>
+        </div>
+    </body>
+</html>

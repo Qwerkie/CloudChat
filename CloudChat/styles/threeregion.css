@@ -1,0 +1,23 @@
+a:link{color: white; line-height:150%}
+a:visited{color: gray}
+a:hover{color:red}
+a:active{font-style: italic}
+
+#navigationbar {color: white; width:101vw; background-color: #333333; box-shadow: 10px 15px 5px #888888}
+#sidenavigation {float: left; width:150px; height:700px; color: white; background: #333333; background-color: #333333; text-align: center; box-shadow: 10px 10px 5px #888888}
+#sframe {width : 100%; height: 100%; background: #333333; background-color:#333333}
+#content {margin-left: 11em; margin-top:20px; height:700px;}
+#cframe { display: block; width:100%; height:100%; }
+
+.topnavigationlink {clear: left; margin-left: 1em; font-size: 1.2em}
+.sidenavigationlink {font-size:1.1em}
+
+#pagefooter {clear: left}
+#footer
+{
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	background-color: black;
+	text-align: center
+} 

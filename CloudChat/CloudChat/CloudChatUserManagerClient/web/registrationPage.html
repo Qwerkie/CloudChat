@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://127.0.0.1:8080/CloudChatUserManagerClient/css/userManagerStyle.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://127.0.0.1:8080/CloudChatUserManagerClient/scripts/sharedScript.js"></script>
+        <script src="http://127.0.0.1:8080/CloudChatUserManagerClient/scripts/loginScript.js"></script>
+        <script>
+            function fadeInChatOptions(sframe) {
+                $("#userIDTag", sframe.contentDocument).html("UserID: " + sessionStorage.user);
+                $("#startChat", sframe.contentDocument).fadeIn("slow");
+                $("#logoutButton", sframe.contentDocument).fadeIn("slow");
+                $("#userIDTag", sframe.contentDocument).fadeIn("slow");
+            }
+            function register() {
+                var userID = $("#userID").val().trim();
+                var password = $("#password").val().trim();
+                if (userID !== "" && password === $("#verifyPassword").val().trim() && password.length > 6) {
+                    $.ajax({
+                        method: "POST",
+                        url: "http://127.0.0.1:8888/CloudChat/navigate",
+                        data: {type: "UserManager", action: "AddUser", userID: userID, password: password},
+                        success: function (data) {
+                            var result = JSON.parse(data);
+                            if (result.retVal === true) {
+                                console.log(result);
+                                sessionStorage.setItem("user", userID);
+
+                                var sframe = parent.document.getElementById("sframe");
+                                $("#loginButton", sframe.contentDocument).fadeOut("slow");
+                                $("#registerButton", sframe.contentDocument).fadeOut("slow");
+                                $("#pageContent").slideUp("slow");
+                                setTimeout(function () {
+                                    document.body.innerHTML = "";
+                                    document.write("<div id='pageContent'><h4 >You are successfully registered and logged in!</h4></div>");
+                                    $("#pageContent").hide();
+                                    $("#pageContent").slideDown("slow");
+                                    fadeInChatOptions(sframe);
+                                    logoutPressed = false;
+                                }, 700);
+                            }
+                            else {
+                                $("#errorMessage").html("Invalid credentials");
+                            }
+                        },
+                        error: function (err) {
+                            console.log(err);
+                        }
+                    });
+                }
+                else if ($("#userID").val().trim() === "") {
+                    $("#errorMessage").html("UserID cannot be blank");
+                }
+                else if ($("#password").val().trim() !== $("#verifyPassword").val().trim()) {
+                    $("#errorMessage").html("Passwords do not match");
+                }
+                else if ($("#password").val().trim().length <= 6) {
+                    $("#errorMessage").html("Password length must be greater than 6 characters");
+                }
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="pageContent">
+            <h2>Register</h2>
+            <div>
+                <fieldset style="display: inline-block;">
+                    <legend>Enter in your User ID and Password of choice</legend>
+                    <form method="POST" onsubmit="return register();">
+                        <div><span>User ID:&emsp;&emsp;&emsp;&emsp;</span><input id="userID" style="margin-left: 9px" type="text" name="userID" placeholder="Your User ID"/></div>
+                        <div><span>Password:&emsp;&emsp;&emsp;&emsp;</span><input id="password" style="margin-left: -4px;"type="password" name="password" placeholder="Your password"/></div>
+                        <div><span>Verify Password:&emsp;</span><input id="verifyPassword" type="password" name="verifyPassword" placeholder="Enter it again"/></div>
+                        <input style="margin-top: 10px;" type="submit" name="Register" value="Register"/>
+                    </form>
+                </fieldset>
+                <div><p id="errorMessage" style="color: red;"></p></div>
+            </div>
+        </div>
+    </body>
+</html>

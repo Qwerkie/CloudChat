@@ -1,0 +1,82 @@
+<LIST>
+    <QUESTION>
+        <PROMPT>Is Javascript an Object Oriented Language?</PROMPT>
+        <ANSWER1 correct="false">True</ANSWER1>
+        <ANSWER2 correct="true">False</ANSWER2>
+        <ANSWER3 correct="false">Not Sure</ANSWER3>
+        <ANSWER4 correct="false">I quit</ANSWER4>
+        <CORRECTANSWER>a2</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>What is the class in the following statement? "p.emphasis{font-weight: bold}"</PROMPT>
+        <ANSWER1 correct="false">p</ANSWER1>
+        <ANSWER2 correct="true">.emphasis</ANSWER2>
+        <ANSWER3 correct="false">font-weight:</ANSWER3>
+        <ANSWER4 correct="false">bold</ANSWER4>
+        <CORRECTANSWER>a2</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>What is a function that handles or responds to an event?</PROMPT>
+        <ANSWER1 correct="true">Event Handler</ANSWER1>
+        <ANSWER2 correct="false">Event Type</ANSWER2>
+        <ANSWER3 correct="false">Target</ANSWER3>
+        <ANSWER4 correct="false">Responder</ANSWER4>
+        <CORRECTANSWER>a1</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>How many threads can Javascript use?</PROMPT>
+        <ANSWER1 correct="false">Four</ANSWER1>
+        <ANSWER2 correct="false">Three</ANSWER2>
+        <ANSWER3 correct="false">Two</ANSWER3>
+        <ANSWER4 correct="true">One</ANSWER4>
+        <CORRECTANSWER>a4</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>What does the acronym DOM stand for?</PROMPT>
+        <ANSWER1 correct="false">Domain Object Material</ANSWER1>
+        <ANSWER2 correct="false">Document with One Margin</ANSWER2>
+        <ANSWER3 correct="true">Document Object Model</ANSWER3>
+        <ANSWER4 correct="false">Decides On Material</ANSWER4>
+        <CORRECTANSWER>a3</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>Which of the following can you NOT select an element by?</PROMPT>
+        <ANSWER1 correct="true">Number</ANSWER1>
+        <ANSWER2 correct="false">ID</ANSWER2>
+        <ANSWER3 correct="false">Name</ANSWER3>
+        <ANSWER4 correct="false">Tag</ANSWER4>
+        <CORRECTANSWER>a1</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>What would you use to create a multi-line comment?</PROMPT>
+        <ANSWER1 correct="false">** **</ANSWER1>
+        <ANSWER2 correct="false">// //</ANSWER2>
+        <ANSWER3 correct="false"># #</ANSWER3>
+        <ANSWER4 correct="true">/* */</ANSWER4>
+        <CORRECTANSWER>a4</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>Which Dialog box displays a message to the user and waits for the user to dismiss the dialog?</PROMPT>
+        <ANSWER1 correct="false">Confirm()</ANSWER1>
+        <ANSWER2 correct="false">Warn()</ANSWER2>
+        <ANSWER3 correct="false">Prompt()</ANSWER3>
+        <ANSWER4 correct="true">Alert()</ANSWER4>
+        <CORRECTANSWER>a4</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>If you wanted to change the current URL of the document displayed in the window, you should change which property?</PROMPT>
+        <ANSWER1 correct="false">URL</ANSWER1>
+        <ANSWER2 correct="false">Webpage</ANSWER2>
+        <ANSWER3 correct="false">Destination</ANSWER3>
+        <ANSWER4 correct="true">Location</ANSWER4>
+        <CORRECTANSWER>a4</CORRECTANSWER>
+    </QUESTION>
+    <QUESTION>
+        <PROMPT>How is &lt; body &gt; related to &lt; html &gt; ?</PROMPT>
+        <ANSWER1 correct="false">It is a parent</ANSWER1>
+        <ANSWER2 correct="true">It is a child</ANSWER2>
+        <ANSWER3 correct="false">It is a header</ANSWER3>
+        <ANSWER4 correct="false">It is a class</ANSWER4>
+        <CORRECTANSWER>a2</CORRECTANSWER>
+    </QUESTION>
+</LIST>

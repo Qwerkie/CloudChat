@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<sd:schema xmlns:sd="http://www.w3.org/2001/XMLSchema">
+
+	<sd:complexType name="ClassType">
+		<sd:sequence>
+			<sd:element name="NUMBER" type="sd:string"/>
+			<sd:element name="DATE" type="sd:string"/>
+			<sd:element name="TAG" type="sd:string"/>
+			<sd:element name="TOPIC" type="sd:string"/>
+			<sd:element name="PROJECT" type="sd:string"/>
+			<sd:element name="NOTES" type="sd:string"/>
+		</sd:sequence>
+	</sd:complexType>
+
+	<sd:complexType name="ScheduleType">
+		<sd:sequence>
+			<sd:element name="CLASS" type="ClassType" maxOccurs="unbounded"/>
+		</sd:sequence>
+	</sd:complexType>
+
+	<sd:element name="SCHEDULE" type="ScheduleType"/>
+</sd:schema>
